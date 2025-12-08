@@ -213,6 +213,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
+    width: 100%;
 }
 
 .arrow-down {
@@ -222,6 +223,7 @@ body {
     border-bottom: 2px solid var(--white);
     transform: rotate(-45deg);
     animation: bounce 2s infinite;
+    margin: 0 auto;
 }
 
 @keyframes bounce {

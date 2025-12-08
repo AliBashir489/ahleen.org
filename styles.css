@@ -209,6 +209,12 @@ html {
     font-size: 3rem;
 }
 
+.quran-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
 .event-header h3 {
     font-size: 2rem;
     color: var(--primary-color);

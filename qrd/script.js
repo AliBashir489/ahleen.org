@@ -2,12 +2,64 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // ========================================
+    // Add to Calendar Functionality
+    // ========================================
+    const addToCalendarBtn = document.getElementById('addToCalendar');
+    if (addToCalendarBtn) {
+        addToCalendarBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Event details
+            const eventTitle = 'Quran Revision Day';
+            const eventDescription = 'A complete day dedicated to revising the Quran in the company of scholars and fellow memorizers. Join us for this blessed opportunity to strengthen your connection with the Book of Allah.';
+            const eventLocation = 'Jammat ul Muttaqeen, 1010 SW 196th Ave, Pembroke Pines, FL 33029';
+            const startDate = '20260123T193000'; // January 23, 2026, 7:30 PM
+            const endDate = '20260124T203000'; // January 24, 2026, 8:30 PM
+            
+            // Create .ics file content
+            const icsContent = [
+                'BEGIN:VCALENDAR',
+                'VERSION:2.0',
+                'PRODID:-//Ahleen.org//Quran Revision Day//EN',
+                'BEGIN:VEVENT',
+                'UID:' + new Date().getTime() + '@ahleen.org',
+                'DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z',
+                'DTSTART:' + startDate,
+                'DTEND:' + endDate,
+                'SUMMARY:' + eventTitle,
+                'DESCRIPTION:' + eventDescription.replace(/\n/g, '\\n'),
+                'LOCATION:' + eventLocation,
+                'STATUS:CONFIRMED',
+                'BEGIN:VALARM',
+                'TRIGGER:-P1D',
+                'ACTION:DISPLAY',
+                'DESCRIPTION:Reminder: ' + eventTitle + ' tomorrow',
+                'END:VALARM',
+                'END:VEVENT',
+                'END:VCALENDAR'
+            ].join('\r\n');
+            
+            // Create blob and download
+            const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'quran-revision-day.ics';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    }
+    
+    // ========================================
     // Smooth Scroll for Anchor Links
     // ========================================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href === '#') return; // Skip if it's just "#"
+            
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const target = document.querySelector(href);
             if (target) {
                 target.scrollIntoView({
                     behavior: 'smooth',

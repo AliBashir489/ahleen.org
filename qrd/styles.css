@@ -133,6 +133,19 @@ body {
     backdrop-filter: blur(10px);
 }
 
+.detail-item.clickable {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+.detail-item.clickable:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 .icon {
     font-size: 1.3rem;
 }

@@ -10,8 +10,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/images/Image (7).png" alt="Ahleen Logo">
+                <span>QRD 2026</span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#success" class="nav-link">Last Year</a></li>
+                <li><a href="#tiers" class="nav-link">Tiers</a></li>
+                <li><a href="#schedule" class="nav-link">Schedule</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#venue" class="nav-link">Venue</a></li>
+                <li><a href="https://www.zeffy.com/en-US/ticketing/quran-revision-day--2026" target="_blank" class="nav-link register-btn">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
-    <header class="hero">
+    <header class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <img src="/images/Image (7).png" alt="Ahleen.org Logo" class="logo fade-in">
@@ -37,7 +62,7 @@
     </header>
 
     <!-- What is QRD Section -->
-    <section class="section what-is-qrd">
+    <section class="section what-is-qrd" id="about">
         <div class="container">
             <h2 class="section-title slide-up">What is the Quran Revision Day?</h2>
             <div class="content-box slide-up-delay">
@@ -110,14 +135,10 @@
     </section>
 
     <!-- Tiers Section -->
-    <section class="section tiers-section">
+    <section class="section tiers-section" id="tiers">
         <div class="container">
             <h2 class="section-title slide-up">Choose Your Tier</h2>
             <p class="section-subtitle slide-up-delay">Select the level that matches your current memorization</p>
-
-            <div class="tier-note">
-                <p><strong>Note:</strong> Ajzaa do not need to be in consecutive order. You'll specify which portions you'll be reviewing as the event approaches.</p>
-            </div>
             
             <div class="tiers-grid">
                 <div class="tier-card tier-1">
@@ -176,13 +197,15 @@
                     </div>
                 </div>
             </div>
-
+                <div class="tier-note">
+                    <p><strong>Note:</strong> Ajzaa do not need to be in consecutive order. You'll specify which portions you'll be reviewing as the event approaches.</p>
+                </div>
             
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="section faq-section">
+    <section class="section faq-section" id="faq">
         <div class="container">
             <h2 class="section-title slide-up">Frequently Asked Questions</h2>
             
@@ -251,7 +274,7 @@
     </section>
 
     <!-- Schedule Section -->
-    <section class="section schedule-section">
+    <section class="section schedule-section" id="schedule">
         <div class="container">
             <h2 class="section-title slide-up">Event Schedule</h2>
             
@@ -409,7 +432,7 @@
     </section>
 
     <!-- Venue Section -->
-    <section class="section venue-section">
+    <section class="section venue-section" id="venue">
         <div class="container">
             <h2 class="section-title slide-up">Venue Information</h2>
             <div class="venue-card">

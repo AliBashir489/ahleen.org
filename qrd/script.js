@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const eventTitle = 'Quran Revision Day';
             const eventDescription = 'A complete day dedicated to revising the Quran in the company of scholars and fellow memorizers. Join us for this blessed opportunity to strengthen your connection with the Book of Allah.';
             const eventLocation = 'Jammat ul Muttaqeen, 1010 SW 196th Ave, Pembroke Pines, FL 33029';
-            const startDate = '20250123T193000'; // January 23, 2025, 7:30 PM
-            const endDate = '20250124T203000'; // January 24, 2025, 8:30 PM
+            const startDate = '20260123T193000'; // January 23, 2026, 7:30 PM
+            const endDate = '20260124T203000'; // January 24, 2026, 8:30 PM
             
             // Create .ics file content
             const icsContent = [
@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Countdown Timer (Optional)
     // ========================================
     function updateCountdown() {
-        const eventDate = new Date('2025-01-23T19:30:00').getTime();
+        const eventDate = new Date('2026-01-23T19:30:00').getTime();
         const now = new Date().getTime();
         const distance = eventDate - now;
 
@@ -329,8 +329,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Console Art
     // ========================================
     console.log('%c                                                                    ', 'font-size: 1px;');
-    console.log('%c🕌 Quran Revision Day 2025', 'color: #1a5f3f; font-size: 24px; font-weight: bold;');
-    console.log('%c📅 January 23-24, 2025', 'color: #d4af37; font-size: 16px;');
+    console.log('%c🕌 Quran Revision Day 2026', 'color: #1a5f3f; font-size: 24px; font-weight: bold;');
+    console.log('%c📅 January 23-24, 2026', 'color: #d4af37; font-size: 16px;');
     console.log('%c📍 Jammat ul Muttaqeen, Pembroke Pines, FL', 'color: #666; font-size: 14px;');
     console.log('%c                                                                    ', 'font-size: 1px;');
     console.log('%cبِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ', 'color: #1a5f3f; font-size: 18px; font-family: Amiri, serif;');

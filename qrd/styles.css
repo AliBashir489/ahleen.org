@@ -372,7 +372,7 @@ body {
 
 .video-container {
     width: 100%;
-    max-width: 750px;
+    max-width: 500px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 15px 50px rgba(10, 74, 110, 0.25);

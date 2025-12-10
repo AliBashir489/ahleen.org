@@ -336,6 +336,119 @@ body {
     font-weight: 500;
 }
 
+/* Success Section */
+.success-section {
+    background: var(--white);
+}
+
+.success-intro {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+}
+
+.success-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.success-details {
+    display: grid;
+    gap: 30px;
+}
+
+.success-highlight {
+    background: var(--light-green);
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 4px solid var(--secondary-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.success-highlight:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-md);
+}
+
+.success-highlight.special {
+    background: linear-gradient(135deg, var(--light-green) 0%, rgba(95, 168, 211, 0.1) 100%);
+    border-left-color: var(--accent-color);
+    border-left-width: 5px;
+}
+
+.highlight-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.success-highlight h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.success-highlight p {
+    color: var(--text-dark);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.success-cta {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.success-cta h3 {
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.success-cta p {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .success-intro {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    
+    .success-highlight {
+        padding: 20px;
+    }
+    
+    .success-cta {
+        padding: 30px 20px;
+    }
+}
+
 /* Benefits Section */
 .benefits-section {
     background: var(--light-green);

@@ -358,7 +358,7 @@ body {
 
 .video-container {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto 50px;
     border-radius: 20px;
     overflow: hidden;
@@ -408,7 +408,8 @@ body {
 
 .achievement-badge {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #000;
     padding: 8px 20px;
     border-radius: 50px;
     font-size: 0.9rem;
@@ -416,6 +417,7 @@ body {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
 }
 
 .featured-achievement h3 {
